@@ -14,11 +14,11 @@
 <form action="/calculator" method="post">
     <input name="x1" value="${x1}">
     <input name="x2" value="${x2}">
-    <input name="action" type="hidden" id="action">
-    <button type="submit" onclick="setAction('add')">Addition(+)</button>
-    <button type="submit" onclick="setAction('sub')">Subtraction(-)</button>
-    <button type="submit" onclick="setAction('mul')">Multiplication(X)</button>
-    <button type="submit" onclick="setAction('div')">Division(/)</button>
+<%--    <input name="action" type="hidden" id="action">--%>
+    <button type="submit" name="action" value="add">Addition(+)</button>
+    <button type="submit" name="action" value="sub">Subtraction(-)</button>
+    <button type="submit" name="action" value="mul">Multiplication(X)</button>
+    <button type="submit" name="action" value="div">Division(/)</button>
 </form>
 <p>${result}</p>
 </body>
